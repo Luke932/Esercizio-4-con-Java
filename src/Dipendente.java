@@ -11,7 +11,6 @@ public class Dipendente {
 	public Dipendente(int matricola, Dipartimento dipartimento) {
 		this.matricola = matricola;
 		this.stipendio = stipendioBase;
-		this.importoOrarioStraordinario = 30;
 		this.livello = Livello.OPERAIO;
 		this.dipartimento = dipartimento;
 	}
@@ -28,12 +27,15 @@ public class Dipendente {
 			break;
 		case IMPIEGATO:
 			this.stipendio = stipendioBase * 1.2;
+
 			break;
 		case QUADRO:
 			this.stipendio = stipendioBase * 1.5;
+
 			break;
 		case DIRIGENTE:
 			this.stipendio = stipendioBase * 2;
+			this.importoOrarioStraordinario = importoOrarioStraordinario * 2;
 			break;
 		}
 	}

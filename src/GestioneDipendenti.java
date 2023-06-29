@@ -3,9 +3,9 @@ public class GestioneDipendenti {
 	public static void main(String[] args) {
 
 		Dipendente Luca = new Dipendente(1, 30, Livello.OPERAIO, Dipartimento.PRODUZIONE);
-		Dipendente Manuel = new Dipendente(2, 30 * 1.2, Livello.OPERAIO, Dipartimento.PRODUZIONE);
-		Dipendente Beppe = new Dipendente(3, 30 * 1.5, Livello.IMPIEGATO, Dipartimento.AMMINISTRAZIONE);
-		Dipendente Ema = new Dipendente(4, 30 * 2, Livello.DIRIGENTE, Dipartimento.VENDITE);
+		Dipendente Manuel = new Dipendente(2, 30, Livello.OPERAIO, Dipartimento.PRODUZIONE);
+		Dipendente Beppe = new Dipendente(3, 30, Livello.IMPIEGATO, Dipartimento.AMMINISTRAZIONE);
+		Dipendente Ema = new Dipendente(4, 30, Livello.DIRIGENTE, Dipartimento.VENDITE);
 
 		Luca.promuovi();
 		Beppe.promuovi();
